@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" style="-fx-background-color: #6ebbd5;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.ShowQuestionsCtrl">
+    <ImageView fitHeight="720.0" fitWidth="1200.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="client/images/background.png" />
+    </ImageView>
+    <Label layoutX="346.0" layoutY="60.0" text="Questions" textFill="#0000004d">
+        <font>
+            <Font name="Showcard Gothic" size="96.0" />
+        </font>
+    </Label>
+    <Label layoutX="346.0" layoutY="51.0" text="Questions" textFill="WHITE">
+        <font>
+            <Font name="Showcard Gothic" size="96.0" />
+        </font>
+    </Label>
+    <Button layoutX="22.0" layoutY="17.0" mnemonicParsing="false" onAction="#returnToAdmin" prefHeight="67.0" prefWidth="167.0" style="-fx-background-color: #00000000;" textFill="#00000049">
+        <font>
+            <Font name="Showcard Gothic" size="14.0" />
+        </font>
+        <graphic>
+            <Label prefHeight="61.0" prefWidth="135.0" text="Back" textFill="WHITE">
+                <font>
+                    <Font name="Showcard Gothic" size="50.0" />
+                </font>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+
+                </cursor>
+            </Label>
+        </graphic>
+    </Button>
+    <Button layoutX="1110.0" mnemonicParsing="false" onAction="#cancel" prefHeight="87.0" prefWidth="94.0" style="-fx-background-color: #00000000;" textFill="#00000049">
+        <font>
+            <Font name="Showcard Gothic" size="14.0" />
+        </font>
+        <graphic>
+            <Label prefHeight="79.0" prefWidth="87.0" text="🏠" textFill="#0000004d">
+                <font>
+                    <Font name="Showcard Gothic" size="74.0" />
+                </font>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+
+                </cursor>
+            </Label>
+        </graphic>
+    </Button>
+   <ScrollPane layoutX="99.0" layoutY="213.0" prefHeight="454.0" prefWidth="1001.0" style="-fx-background-color: #0091be; -fx-border-color: black; -fx-border-radius: 3; -fx-border-width: 3;">
+     <content>
+       <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="446.0" prefWidth="980.0">
+            <children>
+               <TextArea fx:id="displayArea" editable="false" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="446.0" prefWidth="994.0" />
+            </children>
+         </AnchorPane>
+     </content>
+   </ScrollPane>
+</AnchorPane>
